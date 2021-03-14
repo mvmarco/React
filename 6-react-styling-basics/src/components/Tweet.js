@@ -1,3 +1,4 @@
+import '../styles/Tweet.scss'
 function Tweet({name, tweet, tweets, status, setTweets}) {
   const deleteTweet = () => {
     setTweets(tweets.filter((item) => item.id !== tweet.id));

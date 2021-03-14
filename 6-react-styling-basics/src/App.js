@@ -65,8 +65,34 @@
 
 
 // ###########################
-// SAAS STYLING
+// SASS STYLING
 // ###########################
+
+/* 
+  Here there is a good cheatsheet: https://sass-lang.com/guide
+
+  Sass (Sass is the pronunciation, Scss is the actual way of writing it)
+  is like an amplified CSS. In other words, Sass is a preprocessor scripting language that
+  is interpreted or compiled into CCS.
+
+  1. install it with: npm install node-sass
+  2. create a file in the "styles" folder called: "Tweet.scss"
+  3. in "Tweet.js" we have the class: <div className={"tweet"}> we can simply style it in
+     Sass with some small differences than normal css. Check the file.
+  4. in "Tweet.js"  we just: import '../styles/Tweet.scss'
+*/
+
+// ###########################
+// STYLED COMPONENTS
+// ###########################
+
+/* 
+  Quite common, check it out here: https://styled-components.com/
+  What "styled components" allow us to do is to create a variable and you have literally
+  all the style in there.
+
+*/
+
 import TweetList from './components/TweetList.js'
 import CreateTweet from './components/CreateTweet.js'
 import { useState } from 'react';

@@ -1,0 +1,24 @@
+.tweet {
+  background-color: grey;
+  h2 {
+    color: lightblue;
+  }
+  button {
+    background-color: white;
+    margin-right: 2px;
+    border-color: lightblue;
+    border-radius: 10px;
+  }
+}
+
+/* 
+  this literally translate to
+  .tweet {
+    background-color: grey;
+  }
+  .tweet h2 {
+    color: lightblue;
+  }
+
+  etc etc.
+*/
