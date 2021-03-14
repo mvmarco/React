@@ -26,11 +26,12 @@
 */
 
 // ###########################
-// FOLDER STYLING
+// FOLDER STYLING ONE
 // ###########################
 
 /* 
-  1. You create a folder in "src" called for instance, "styles"
+  1. You create a folder in "src" called for instance, "styles" and create an "App.css" file
+     in it
   2. The you import it in "App.js" (here) as follow:              import './styles/App.css';
   3. Anywhere in the application you can take a component or an element and add a class like:
      classList={className} and then in the "App.css" you can just call that class and style it
@@ -42,7 +43,30 @@
   The problem with this approach is that if the app is too big the multiple classNames can 
   collide. But for small project it is a fine approach.
 */
-import './styles/App.css';
+
+// ###########################
+// FOLDER STYLING TWO
+// ###########################
+
+/*
+  To avoid that things collide (for instance we have here in "App.js" a "h1" with:
+  className={title}    but also in "Tweet.js" we have another "h1" with className={title}),  
+  You can:
+  1. In the folder "styles" you can create an "App.module.css" file
+  2. Import it in App.js as follow:  import s from './styles/App.module.css';
+     notice that "s" can be anything you want. 
+  3. Add a className={s.title} And now only the Title in "App.js" will change.
+     notice also that if you do the same in "Tweet.js" things will not work out.
+  4. In fact, if you want some style in "Tweet.js" you gotta create its own "Tweet.module.css"
+  5. Then import it (in Tweet.js) as follow: import s from '../styles/Tweet.module.css';
+  6. And add: Add a className={s.title} 
+
+*/
+
+
+// ###########################
+// SAAS STYLING
+// ###########################
 import TweetList from './components/TweetList.js'
 import CreateTweet from './components/CreateTweet.js'
 import { useState } from 'react';
@@ -55,7 +79,7 @@ function App() {
   const [tweets, setTweets] = useState([]);
   return (
     <div>
-      <h1>Hello {name}</h1>
+      <h1 className={"title"}>Hello {name}</h1>
       <CreateTweet
         textInput={textInput}
         setTextInput={setTextInput}
