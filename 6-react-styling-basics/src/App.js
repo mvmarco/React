@@ -90,7 +90,34 @@
   Quite common, check it out here: https://styled-components.com/
   What "styled components" allow us to do is to create a variable and you have literally
   all the style in there.
+  It is similar to the "inline styles" with the difference that you can just use normal CSS.
+  1. you install it with: npm install --save styled-components
+  2. whereever you need it you do: import styled from 'styled-components'
+  3. to the bottom you can create a const (any name) targeting the element you want (eg. a div)
+     as follow:
+    <div>
+      <h1 className={"title"}>Your Tweet</h1>
+      <h2>Name: {name}</h2>
+      <h3>Message: {tweet.message}, status: {status}</h3>
+      <button onClick={deleteTweet}>Delete</button>
+      <button>Like</button>
+    </div>
 
+     const TweetStyle = styled.div`
+      background-color: red
+     `
+  4. then you replace the "div" tag with the name of the constant you created. Like this:
+    <TweetStyle>
+      <h1 className={"title"}>Your Tweet</h1>
+      <h2>Name: {name}</h2>
+      <h3>Message: {tweet.message}, status: {status}</h3>
+      <button onClick={deleteTweet}>Delete</button>
+      <button>Like</button>
+    </TweetStyle>
+
+
+
+  If does not do autocomplete install the extension: "styled components"
 */
 
 import TweetList from './components/TweetList.js'
