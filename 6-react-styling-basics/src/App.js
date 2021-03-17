@@ -1,4 +1,17 @@
 // ###########################
+// FONTAWESOME REACT
+// ###########################
+
+/* 
+  In order to use "fontawesome" with React you need to go here: 
+  https://fontawesome.com/how-to-use/on-the-web/using-with/react
+  and run:
+  1. npm i --save @fortawesome/fontawesome-svg-core
+  2. npm install --save @fortawesome/free-solid-svg-icons
+  3. npm install --save @fortawesome/react-fontawesome
+*/
+
+// ###########################
 // STYLING
 // ###########################
 
