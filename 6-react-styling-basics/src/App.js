@@ -10,10 +10,13 @@
   2. npm install --save @fortawesome/free-solid-svg-icons
   3. npm install --save @fortawesome/react-fontawesome
 
-  Then in "App.js" you can:
+  Then in the component you need the icon, you can:
   1. Import the library: import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   2. Import the font you need: import { faPlay } from '@fortawesome/free-solid-svg-icons'
      PS: to add multiple of them: just {faPlay, faCoffee} etc etc.
+  3. add the icon in the JSX:
+     <FontAwesomeIcon className="play" icon={faPlay}/>
+     so you attach as a prop the icon you need, and the class is for the styling
 */
 
 // ###########################
