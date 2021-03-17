@@ -103,6 +103,21 @@
   3. in "Tweet.js" we have the class: <div className={"tweet"}> we can simply style it in
      Sass with some small differences than normal css. Check the file.
   4. in "Tweet.js"  we just: import '../styles/Tweet.scss'
+
+  With Sass you can also use partials:
+  1. in the style folder, create a partial with underscore such as: _component.scss
+  2. import that partial file or files in the main app.scss but at the bottom as follow:
+     @import './component';
+     @import './component';
+     @import './component';
+
+
+  So in sum you have to:
+  1. create the folder styles
+  2. create the main "app.scss" and import in App.js or where needed like: '../styles/App.scss'
+  3. crete the partials files like: "_components.scss"
+  4. import those partials into the app.scss like: @import "./components"
+
 */
 
 // ###########################
