@@ -15,8 +15,10 @@
   2. Import the font you need: import { faPlay } from '@fortawesome/free-solid-svg-icons'
      PS: to add multiple of them: just {faPlay, faCoffee} etc etc.
   3. add the icon in the JSX:
-     <FontAwesomeIcon className="play" icon={faPlay}/>
+     <FontAwesomeIcon className="play" size="2x" icon={faPlay}/>
      so you attach as a prop the icon you need, and the class is for the styling
+     PS: there is also another prop called size="2x" where you can define the size of the icon
+     check online. 
 */
 
 // ###########################
